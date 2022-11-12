@@ -12,9 +12,9 @@ phases:
   post_build:
     commands:
       - echo "Updating lambda function..."
-      - aws lambda update-function-code --function-name cfn_lambda --zip-file fileb://Lambda/build-index.yaml
+      - aws lambda update-function-code --function-name cfn_lambda --zip-file fileb://Lambda/cfn_lambda.zip
       - echo "Updating done!"
 artifacts:
   type: zip
   files:
-    - build-index.yaml
+    - lf_cf.yaml
