@@ -21,8 +21,6 @@ awsauth = AWS4Auth(credentials.access_key, credentials.secret_key, region, servi
 
 rekognition = boto3.client('rekognition')
 
-
-
 def rekognition_function(bucket_name, file_name):
     
     client = boto3.client('rekognition')
@@ -120,6 +118,7 @@ def lambda_handler(event, context):
         os.index(index = "photos", id = objectKey, body = esObject, refresh = True)
     
     
+    # TEST
     return {
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')
