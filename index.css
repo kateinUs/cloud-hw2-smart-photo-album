@@ -11,8 +11,8 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    color: white;
-    background-color: rgb(39, 37, 37);
+    color: black;
+    background-color: white;
 }
 
 .container-fluid {
